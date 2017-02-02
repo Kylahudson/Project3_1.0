@@ -11,35 +11,40 @@
    Supporting Files: none
 
 */
+/*body styles*/
 body{
   font-family:Tahoma,Geneva,sans-serif;
 }
-#articleheader{
-  font: 18px normal;
-  letter-spacing: 7px;
-  text-align: center;
-}
-nav ul {
+/*nav styles*/
+nav ul  {
   background-color: rgb(125,120,89);
   line-height: 3em;
-  list-style-type: none;
+list-style-type: none;;
 }
 nav ul a{
   text-decoration: none;
   color:rgba(225,225,225,0.5);
-  color:white;
+
+
 }
 nav ul li:hover{
   background-color: rgb(131,121,36);
     list-style-image: url("wheelmarker.png");
-
+    color:white;
 }
 nav ul li a:hover{
   color:yellow;
   color:rgb(225, 225,225);
 
 }
-#leftsection{
+/*article styles*/
+#articleheader{
+  font: 18px normal;
+  letter-spacing: 7px;
+  text-align: center;
+}
+/*leftsection styles*/
+#leftsection > p{
   font-size: 22px;
 
 }
@@ -47,4 +52,44 @@ nav ul li a:hover{
 #firstpar:first-line{
     text-transform:uppercase;
 
+}
+
+/*blockquote styles*/
+blockquote{
+  background-color: rgb(131 , 121, 36);
+  color:white;
+  font-size: 16px;
+  font-family: Comic Sans MS,Times,cursive;
+}
+blockquote p:before{
+  content: open-quote;
+}
+blockquote p:after{
+  content: close-quote;
+}
+
+/*rightsection styles*/
+#rightsection h1{
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  text-align: center;
+
+}
+#rightsection h2{
+  font-size: 18px;
+  text-align: right;
+  font-weight: normal;
+
+}
+#rightsection p{
+  color:gray;
+  font-size: 14px;
+  text-align: justify;
+}
+/*footer styles*/
+footer address{
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
 }
